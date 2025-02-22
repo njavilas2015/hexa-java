@@ -23,6 +23,7 @@
 				"java.inlayHints.parameterNames.enabled": "all",
 				"java.maven.downloadSources": true,
 				"java.nullAnalysis.enabled": true,
+				"java.compile.nullAnalysis.mode": "automatic",
 				"java.autobuild.enabled": true,
 				"java.completion.favoriteStaticMembers": [
 					"org.junit.jupiter.api.Assertions.*",
