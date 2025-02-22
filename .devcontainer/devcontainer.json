@@ -22,6 +22,7 @@
 				"java.references.includeAccessors": true,
 				"java.inlayHints.parameterNames.enabled": "all",
 				"java.maven.downloadSources": true,
+				"java.nullAnalysis.enabled": true,
 				"java.autobuild.enabled": true,
 				"java.completion.favoriteStaticMembers": [
 					"org.junit.jupiter.api.Assertions.*",
