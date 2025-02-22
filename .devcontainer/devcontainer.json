@@ -1,0 +1,53 @@
+{
+	"name": "Backend JAVA",
+	"dockerFile": "Dockerfile",
+	"context": "..",
+	"runArgs": [
+		"--network",
+		"host",
+		"--env-file",
+		".env"
+	],
+	"postCreateCommand": "echo 'Welcome!! Ya puedes trabajar'",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash",
+				"java.configuration.updateBuildConfiguration": "automatic",
+				"java.format.settings.url": "https://raw.githubusercontent.com/redhat-developer/vscode-java/master/eclipse-formatter.xml",
+				"java.codeGeneration.hashCodeEquals.useInstanceof": true,
+				"java.codeGeneration.useBlocks": true,
+				"java.imports.gradle.enabled": true,
+				"java.imports.gradle.wrapper.checksums": [],
+				"java.references.includeAccessors": true,
+				"java.inlayHints.parameterNames.enabled": "all",
+				"java.maven.downloadSources": true,
+				"java.autobuild.enabled": true,
+				"java.completion.favoriteStaticMembers": [
+					"org.junit.jupiter.api.Assertions.*",
+					"org.junit.jupiter.api.Assumptions.*",
+					"org.junit.jupiter.api.DynamicContainer.*",
+					"org.junit.jupiter.api.DynamicTest.*"
+				],
+				"git.enabled": true,
+				"git.autofetch": true,
+				"git.confirmSync": false
+			},
+			"extensions": [
+				"redhat.java",
+				"streetsidesoftware.code-spell-checker",
+				"visualstudioexptteam.intellicode-api-usage-examples",
+				"visualstudioexptteam.vscodeintellicode",
+				"ms-vscode.makefile-tools",
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-java-debug",
+				"vscjava.vscode-java-dependency",
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-java-test",
+				"vscjava.vscode-lombok",
+				"vscjava.vscode-maven"
+			]
+		}
+	},
+	"remoteUser": "vscode"
+}
